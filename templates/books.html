@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="page-title">All Books</h1>
+
+<div class="books-grid">
+{% for book in books %}
+<div class="book-card">
+    <h2>{{ book.title }}</h2>
+    <p><strong>Author:</strong> {{ book.author }}</p>
+    <p><strong>Genre:</strong> {{ book.genre }}</p>
+    <a href="/book/{{ loop.index0 }}" class="view-btn">View Details</a>
+</div>
+{% endfor %}
+</div>
+{% endblock %}

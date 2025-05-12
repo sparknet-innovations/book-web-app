@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title or "Book App" }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    {% if page_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/' + page_css) }}">
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="layout"> 
+    <!-- Header with navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="/">📘 <span>BookWorld</span></a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/books">Books</a></li>
+                <li><a href="/add">Add Book</a></li>
+                <li><a href="/search">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 BookWorld. All rights reserved.</p>
+    </footer>
+
+    </div>
+</body>
+</html>

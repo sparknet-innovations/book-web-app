@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Welcome to BookWorld 📚</h1>
+    <p>Your one-stop destination to explore, add, and search books!</p>
+</section>
+
+<!-- Books Section -->
+<section id="books" class="books-section">
+    <h2>📖 Available Books</h2>
+    <div class="book-list">
+        {% for book in books %}
+        <div class="book-card">
+            <h3>{{ book.title }}</h3>
+            <p><strong>Author:</strong> {{ book.author }}</p>
+            <p>{{ book.description[:100] }}...</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Add Book Section -->
+<section id="add" class="add-book-section">
+    <h2>➕ Add a New Book</h2>
+    <form method="POST">
+        <input type="text" name="title" placeholder="Title" required>
+        <input type="text" name="author" placeholder="Author" required>
+        <textarea name="description" placeholder="Description" rows="4" required></textarea>
+        <button type="submit">Add Book</button>
+    </form>
+</section>
+
+<!-- Search Section -->
+<section id="search" class="search-section">
+    <h2>🔍 Search Books</h2>
+    <form method="GET">
+        <input type="text" name="query" placeholder="Search by title..." required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if results is defined %}
+        {% if results %}
+        <div class="search-results">
+            <h3>Results:</h3>
+            <ul>
+                {% for book in results %}
+                <li><strong>{{ book.title }}</strong> by {{ book.author }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% else %}
+        <p>No books found for "<strong>{{ query }}</strong>"</p>
+        {% endif %}
+    {% endif %}
+</section>
+
+{% endblock %}

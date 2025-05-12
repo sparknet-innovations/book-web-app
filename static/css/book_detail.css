@@ -1,0 +1,41 @@
+.book-detail-card {
+    max-width: 700px;
+    margin: auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.book-title {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.book-detail-card p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #34495e;
+}
+
+.book-description {
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #16a085;
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "description": "An easy & proven way to build good habits and break bad ones."
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "description": "A journey of a shepherd boy pursuing his dreams across the desert."
+  },
+  {
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "description": "Rules for focused success in a distracted world."
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "A dystopian novel that explores the dangers of totalitarianism."
+  },
+  {
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "description": "A brief history of humankind exploring evolution and civilization."
+  },
+  {
+    "title": "Ikigai",
+    "author": "Héctor García & Francesc Miralles",
+    "description": "The Japanese secret to a long and happy life."
+  },
+  {
+    "title": "The Power of Now",
+    "author": "Eckhart Tolle",
+    "description": "A guide to spiritual enlightenment through present moment awareness."
+  },
+  {
+    "title": "Start With Why",
+    "author": "Simon Sinek",
+    "description": "How great leaders inspire everyone to take action."
+  },
+  {
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert T. Kiyosaki",
+    "description": "What the rich teach their kids about money that the poor do not."
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "description": "A groundbreaking tour of the mind and the two systems that drive the way we think."
+  },
+    {
+        "title": "The Subtle Art of Not Giving a F*ck",
+        "author": "Mark Manson",
+        "description": "A counterintuitive approach to living a good life."
+    },
+    {
+        "title": "Becoming",
+        "author": "Michelle Obama",
+        "description": "A memoir by the former First Lady of the United States."
+    }
+    
+]
+

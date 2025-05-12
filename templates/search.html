@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Search Books</h1>
+
+{% if query %}
+    <p>Showing results for "<strong>{{ query }}</strong>":</p>
+
+    {% if books %}
+        <ul class="book-list">
+            {% for book in books %}
+            <li class="book-item">
+                <h3>{{ book.title }}</h3>
+                <p><strong>Author:</strong> {{ book.author }}</p>
+                <p>{{ book.description }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No books found.</p>
+    {% endif %}
+
+    <a href="{{ url_for('search') }}" class="back-button">← Back to Search</a>
+
+{% else %}
+    <form method="post" class="search-form">
+        <input type="text" name="query" placeholder="Search by title..." required>
+        <button type="submit">Search</button>
+    </form>
+{% endif %}
+{% endblock %}

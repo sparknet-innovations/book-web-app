@@ -1,0 +1,73 @@
+section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.hero {
+    text-align: center;
+    background: #f1f5f9;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.hero p {
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.books-section .book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.book-card {
+    background: #ecf0f1;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.add-book-section input, .add-book-section textarea {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-book-section button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-section form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.search-section input {
+    padding: 0.6rem;
+    width: 60%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-section button {
+    padding: 0.6rem 1rem;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
