@@ -45,7 +45,7 @@ book-web-app/
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/bookworld.git
+git clone https://github.com/sparknet-innovations/book-web-app.git
 cd book-web-app
 ````
 
