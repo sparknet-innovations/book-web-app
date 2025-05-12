@@ -1,4 +1,4 @@
-# 📘 BookWorld - A Simple Flask Book Management App
+# 📘 BookWorld - A Flask Book Management App
 
 **BookWorld** is a lightweight web application built with Flask. It allows users to browse, add, and search for books in a clean, responsive interface.
 
@@ -46,7 +46,7 @@ book-web-app/
 
 ```bash
 git clone https://github.com/yourusername/bookworld.git
-cd bookworld
+cd book-web-app
 ````
 
 2. **Create a virtual environment (optional but recommended)**
