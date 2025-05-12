@@ -22,15 +22,15 @@ book-web-app/
 │       ├── base.css
 │       ├── books.css
 │       ├── home.css
-│       ├── add\_book.css
-│       └── book\_detail.css
+│       ├── add_book.css
+│       └── book_detail.css
 │
 ├── templates/
 │   ├── base.html
 │   ├── home.html
 │   ├── books.html
-│   ├── add\_book.html
-│   ├── book\_detail.html
+│   ├── add_book.html
+│   ├── book_detail.html
 │   └── search.html
 │
 ├── books.json
